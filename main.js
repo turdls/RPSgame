@@ -156,9 +156,9 @@ const game = () => {
         } else if (
             (playerChoice == "rock" && computerChoice == "scissors") ||
             (playerChoice == "scissors" && computerChoice == "paper") ||
-            (playerChoice == "scissors" && computerChoice == "paper")) {
+            (playerChoice == "paper" && computerChoice == "rock")) {
             winner.textContent = "Player Wins!";
-            counter++;
+            //counter++;
             pScore++;
             updateScore();
             return;
